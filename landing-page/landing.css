@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
+}
+
+header{
+    display: inline;
+}
+
+nav{
+    background-color: rgb(57, 54, 54);
+    top: 0;
+    padding: 5px;
+    position: sticky;
+}
+
+nav a{
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+}
+
+nav li{
+    list-style-type: none;
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    color: rgb(198, 46, 46);
+}
+
+main{
+    padding: 20px;
+    overflow: auto;
+}
+
+#content{
+    float: left;
+    width: 75%;
+}
+
+aside{
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+.card{
+    box-shadow: 0px 4px 8px 0px rgb(94, 93, 93);
+    padding: 22px;
+    margin: 23px;
+    border-radius: 6px;   
+}
+
+.Image-content{
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.Profile img {
+    width: 250px;
+    margin-left: -8px;
+}
+
+.Profile header{
+    text-align: center;
+}
+
+th{
+    text-align: left;
+}
+
+footer{
+    background-color: rgb(57, 54, 54);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}
+
+@media screen and (max-width :1024px) {
+    
+    #content,
+    aside {
+        width:100%;
+        padding: 0;
+    }
+}
